@@ -1,0 +1,125 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101827;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+header {
+    height: 75px;
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #263449;
+}
+
+.brand {
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.brand span {
+    color: #38bdf8;
+}
+
+.download-btn {
+    text-decoration: none;
+    background: #38bdf8;
+    color: #101827;
+    padding: 12px 20px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: #ffffff;
+    transform: translateY(-2px);
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.subtitle {
+    color: #38bdf8;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.intro h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.intro p:last-child {
+    color: #aab7c8;
+    font-size: 14px;
+}
+
+.pdf-container {
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 850px;
+}
+
+.pdf-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0 10px;
+    color: #7f8da3;
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 0 5%;
+    }
+
+    .brand {
+        font-size: 19px;
+    }
+
+    .download-btn {
+        padding: 10px 13px;
+        font-size: 12px;
+    }
+
+    main {
+        padding: 35px 12px;
+    }
+
+    .intro h1 {
+        font-size: 29px;
+    }
+
+    .pdf-container {
+        height: 650px;
+        padding: 4px;
+    }
+}
